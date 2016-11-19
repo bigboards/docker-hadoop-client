@@ -4,8 +4,6 @@ FROM bigboards/base-client-__arch__
 MAINTAINER bigboards
 USER root
 
-ENV NOTVISIBLE "in users profile"
-
 # Install hadoop-client
 RUN curl -s http://www.eu.apache.org/dist/hadoop/common/hadoop-2.6.4/hadoop-2.6.4.tar.gz | tar -xz -C /opt
 RUN cd /opt && ln -s ./hadoop-2.6.4 hadoop
