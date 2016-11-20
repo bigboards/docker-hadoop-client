@@ -5,8 +5,8 @@ MAINTAINER bigboards
 USER root
 
 # Install hadoop-client
-RUN curl -s http://www.eu.apache.org/dist/hadoop/common/hadoop-2.6.4/hadoop-2.6.4.tar.gz | tar -xz -C /opt \
- && cd /opt && ln -s ./hadoop-2.6.4 hadoop
+RUN curl -s http://www.eu.apache.org/dist/hadoop/common/hadoop-2.6.4/hadoop-2.6.4.tar.gz | tar -xz -C /opt 
+RUN cd /opt && ln -s ./hadoop-2.6.4 hadoop
 
 ENV HADOOP_PREFIX /opt/hadoop
 ENV YARN_HOME /opt/hadoop
