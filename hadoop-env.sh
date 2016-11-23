@@ -14,5 +14,3 @@ export YARN_HOME=/opt/hadoop
 export SQOOP_HOME=/opt/sqoop
 export PIG_HOME=/opt/pig
 export PATH=${PATH}:${PIG_HOME}/bin:${SQOOP_HOME}/bin:${HADOOP_HOME}/bin
-
-/bin/bash
