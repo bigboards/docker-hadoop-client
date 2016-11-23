@@ -21,7 +21,7 @@ ENV YARN_CONF_DIR /opt/hadoop/etc/hadoop
 # copy the scripts
 ADD hadoop-shell /bin/hadoop-shell
 RUN chmod a+x /bin/hadoop-shell
-ADD hadoop-env /etc/profile.d/hadoop-env.sh
+ADD hadoop-env.sh /etc/profile.d/hadoop-env.sh
 RUN chmod a+x /etc/profile.d/hadoop-env.sh
 
 # declare the volumes
